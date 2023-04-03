@@ -1,0 +1,97 @@
+nav {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 3.5rem;
+    box-shadow: 0px 1px 0px 0px rgb(255, 255, 255);
+  }
+
+  nav h1 {
+    color: var(--principalColor);
+  }
+  
+  nav a {
+    color: var(--principalColor);
+    transition: var(--transition);
+    font-size: 1.5em;
+
+  }
+  nav a:hover {
+    padding-bottom: 6px;
+    border-bottom: 2px solid var(--auxColor);
+    background: var(--secondaryColor);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  nav ul {
+    display: flex;
+    gap: 1.9rem;
+  }
+  
+  nav ul li {
+    font-weight: var(--negrita);
+  }
+  .hamburguer--menu {
+    color: var(--principalColor);
+    font-size: 2rem;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+  }
+
+  .show {
+    transform: translateX(0);
+  }
+
+  .contactButton {
+    color: var(--principalColor);
+    border: 1px solid var(--principalColor);
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: var(--transition);
+  }
+
+  .contactButton:hover {
+    color: white;
+    padding: 10.2px;
+    border-bottom: 2px solid var(--principalColor);
+    background-color: var(--principalColor);
+  }
+
+  .iconPage {
+    width: 60px;
+  }
+
+  @media screen and (max-width: 769px) {
+    nav {
+      padding: 0.5rem 1rem;
+    }
+    nav ul {
+      position: fixed;
+      background-color: var(--bg-color);
+      flex-direction: column;
+      top: 86px;
+      left: 10%;
+      width: 80%;
+      text-align: center;
+      transform: translateX(120%);
+      transition: var(--transition);
+    }
+  
+     nav ul li {
+      margin: 8px;
+    }
+    .hamburguer--menu {
+      display: block;
+    }
+  }
