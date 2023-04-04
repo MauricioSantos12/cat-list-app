@@ -3,7 +3,7 @@
 /* Variables */
 :root {
   --font-family: 'Ddt-Regular';
-  --transition: 1s ease-in;
+  --transition: 1.5s ease-in;
   --bg: black;
   --principalColor: white;
   --secondaryColor: linear-gradient(to right, rgb(97, 87, 255), rgb(0, 230, 204), rgb(97, 87, 255)) 0% 100% / 300%;
