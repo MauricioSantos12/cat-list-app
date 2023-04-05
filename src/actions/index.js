@@ -1,1 +1,1 @@
-export * from './cat.actions'
+export * from './cat.action'
